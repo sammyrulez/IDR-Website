@@ -169,21 +169,39 @@ Use analytics to understand what players are playing and what they are not, and 
                     <div class="col-xl-6">
                         <h2 class="mb-4">Ready to get started? Sign up now!</h2>
 
-                        <form>
+                        <form id="signinForm">
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="InputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="InputName" name="name">
+                                <div id="emailHelp" class="form-text">How can we call you?</div>
+                              </div>
+                            <div class="mb-3">
+                              <label for="InputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="InputEmail1" name="email" aria-describedby="emailHelp">
                               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                                <label for="game_title" class="form-label">Game title</label>
+                                <input type="text" class="form-control" id="game_title" name="game_title" >
+                                <div id="game_titleHelp" class="form-text">Title of the masterwork you are working at ( if any )</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="status" class="form-label">Project status</label>
+                                <input type="text" class="form-control" id="status" name="status" >
+                                <div id="game_titleHelp" class="form-text">Just started? Ready to release?</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="engine" class="form-label">Game engine</label>
+                                <input type="text" class="form-control" id="engine" name="engine" >
+                                <div id="game_titleHelp" class="form-text">Optional</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="notes" class="form-label">Notes</label>
+                                <input type="text" class="form-control" id="notes" name="notes" >
+                                <div id="game_titleHelp" class="form-text">Something</div>
+                              </div>
+                           
+                            <button type="button" class="btn btn-primary" onclick="send_signinForm_data()">Submit</button>
                           </form>
                     </div>
                 </div>
