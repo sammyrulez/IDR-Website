@@ -2182,7 +2182,13 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #a92020;
+  color: #d2d4d5;
+}
+
+.form-text-dark {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #255c32;
 }
 
 .form-control {
