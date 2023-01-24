@@ -1,5 +1,5 @@
 function send_signinForm_data() {
-  if ($("#signinForm").checkValidity()) {
+  if ($("#signinForm")[0].checkValidity()) {
     $("#fieldset1").children().attr("disabled", "disabled");
     $.ajax({
       type: "POST",
@@ -15,5 +15,7 @@ function send_signinForm_data() {
       .fail(function () {
         alert("error");
       }); 
+    }else{
+      alert("Name and email are mandatory");
     }
 }
